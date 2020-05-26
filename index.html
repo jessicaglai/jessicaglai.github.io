@@ -3,16 +3,20 @@
 
 <head>
     <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/default_mobile.css">
     <title>jessicaglai.github.io</title>
 </head>
 
 <body>
-    <div center>
+    <div id="contentholder">
         <header>
-            <a href="index.html"><img src="images/logo.png"></a>
-            <h1 title>Jessica Lai</h1>
-            <h2 logline>Multimedia Artist</h2>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+
+            <h1 id="artistname">Jessica Lai</h1>
+            <h2 id="logline">Multimedia Artist</h2>
 
             <!--Nav bar that I may include later
             <nav>
@@ -45,12 +49,14 @@
                 <h3>Latest Projects</h3>
             </div>
 
-            <section project1>
+            <section askbensolo>
                 <h4 class="projecttitle">
                     Ask Ben Solo: A fan project in transmedia storytelling
                 </h4>
 
-                <div class="projectimage"><img src="images/askbensolo icon.png"></div>
+                <div class="projectimage">
+                    <img src="images/askbensolo icon.png">
+                </div>
 
                 <p><em>Star Wars: The Force Awakens</em> came out in 2015, revealing that Princess Leia and Han Solo had
                     a son named Ben who turned to the Dark Side of the Force. At the time, I was 16 years old and
@@ -72,8 +78,10 @@
                     “Wonderful”: A short film about loving my body
                 </h4>
 
-                <iframe src="https://player.vimeo.com/video/397321225" width="640" height="360" frameborder="0"
-                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="videoWrapper">
+                    <iframe src="https://player.vimeo.com/video/397321225" width="640" height="360" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
 
                 <p><em>“Yeah, I can’t be a Rockette<br>
                         Or model for Victoria’s Secret<br>
@@ -96,8 +104,10 @@
                     Maya walk cycle: A walk cycle animated in Maya
                 </h4>
 
-                <iframe src="https://player.vimeo.com/video/420969422" width="640" height="480" frameborder="0"
-                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+                    <iframe src="https://player.vimeo.com/video/420969422" width="640" height="480" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
 
                 <p>This walk cycle is my first experimentation with a character rig in Maya (the Andy rig, a free rig
                     made by the Savannah College of Art and Design). It was an assignment for my Character Animation
@@ -114,8 +124,10 @@
 
                 </h4>
 
-                <iframe src="https://player.vimeo.com/video/420971327" width="640" height="360" frameborder="0"
-                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="videoWrapper">
+                    <iframe src="https://player.vimeo.com/video/420971327" width="640" height="360" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
 
                 <p>My freshman year at UC Davis, I was involved with the Davis Filmmaking Society and edited a horror
                     short called “The Ones Who Reap.” Since “The Ones Who Reap” wasn’t my own project, editing this film
