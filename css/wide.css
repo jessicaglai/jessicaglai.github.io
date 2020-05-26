@@ -1,0 +1,69 @@
+body {
+    background-color: darkseagreen;
+}
+
+header {
+    height: 25vh;
+}
+
+p {
+    font-size: 1rem;
+    padding: 0;
+}
+
+/* Text Header Classes */
+
+.font__siteTitle {
+    font-size: 2vw;
+}
+
+.font__logline {
+    font-size: 1.5rem;
+}
+
+.font__sectionHeader {
+    font-size: 2rem;
+}
+
+.font__projectTitle {
+    font-size: 1.5rem;
+}
+
+.font__projectSubtitle {
+    font-size: 1.5rem;
+}
+
+/* Text Headers END */
+
+.item__project {
+    background-color: whitesmoke;
+    margin-bottom: 10vh;
+}
+
+.container__contentFrame {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container__body--notHeader {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.container__scrollingContent {
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container__sidebar {
+    width: 30%;
+    margin-top: 5vh;
+}
+
+.container__logo {
+    width: 15%;
+    height: 30%;
+    padding: 1%;
+}

@@ -18,30 +18,39 @@ footer {
     text-align: center;
 }
 
+/* Gradient transparent - color - transparent
+Taken from https://css-tricks.com/examples/hrs/ */
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 /* Text Header Classes */
 
-.title__myName {
-    font-size: 8rem;
+.font__siteTitle {
+    font-size: 8vw;
     line-height: 1rem;
 }
 
-.logline {
+.font__logline {
     font-size: 6rem;
 }
 
-.sectionHeader {
+.font__sectionHeader {
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-.projectTitle {
+.font__projectTitle {
     font-size: 5rem;
     font-weight: bold;
     padding-left: 5%;
 }
 
-.projectSubtitle {
+.font__projectSubtitle {
     font-size: 5rem;
     font-weight: normal;
     padding-left: 5%;
@@ -94,7 +103,7 @@ Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
     width: 100%;
 }
 
-.container__pageContent {
+.container__contentFrame {
     background-color: ivory;
 }
 
