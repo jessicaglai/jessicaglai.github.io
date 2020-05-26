@@ -1,6 +1,11 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 p {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
+    padding: 5%;
 }
 
 img {
@@ -8,14 +13,41 @@ img {
     height: auto;
 }
 
-h1 {
+footer {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Text Header Classes */
+
+.title__myName {
     font-size: 8rem;
     line-height: 1rem;
 }
 
-h2 {
-    font-size: 5rem;
+.logline {
+    font-size: 6rem;
 }
+
+.sectionHeader {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.projectTitle {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.projectSubtitle {
+    font-size: 5rem;
+    font-weight: normal;
+    padding-left: 5%;
+}
+
+/* Text Headers END */
 
 header {
     text-align: center;
@@ -31,10 +63,15 @@ header {
 }
 
 .item__social {
-    width: 20%;
+    width: 10%;
 }
 
-/* taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
+.container_projects {
+    display: flex;
+}
+
+/* Fits video players to screen width
+Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
 
 .videoWrapper {
     position: relative;
@@ -51,7 +88,9 @@ header {
     height: 100%;
 }
 
-.projectimage {
+/* END */
+
+.projectImage {
     width: 100%;
 }
 
@@ -62,6 +101,7 @@ header {
 .container__logo {
     width: 50%;
     margin: 0 auto;
+    padding: 5%;
 }
 
 .container__icon {
