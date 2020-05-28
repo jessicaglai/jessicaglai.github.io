@@ -36,10 +36,12 @@ hr.style-two {
 
 .font__siteTitle {
     font-size: 10vw;
+    margin: 0;
 }
 
 .font__logline {
     font-size: 8vw;
+    margin: 3vh;
 }
 
 .font__sectionHeader {
