@@ -2,8 +2,22 @@ body {
     background-color: darkseagreen;
 }
 
-header {
-    height: 25vh;
+.wrapper__allContent {
+    margin: 0 auto;
+}
+
+/* Wrapper adjustment based on size of browser window: the smaller the browser is, the wider the content wrapper becomes */
+
+@media all and (min-width: 1001px) {
+    .wrapper__allContent {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 520px) {
+    .wrapper__allContent {
+        width: 90%;
+    }
 }
 
 p {
@@ -14,11 +28,12 @@ p {
 /* Text Header Classes */
 
 .font__siteTitle {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .font__logline {
     font-size: 1.5rem;
+    line-height: 1rem;
 }
 
 .font__sectionHeader {
@@ -40,11 +55,6 @@ p {
     margin-bottom: 10vh;
 }
 
-.container__contentFrame {
-    width: 70%;
-    margin: 0 auto;
-}
-
 .container__body--notHeader {
     display: flex;
     padding-left: 2%;
@@ -63,7 +73,7 @@ p {
 }
 
 .container__logo {
+    display: inline-block;
     width: 15%;
-    height: 30%;
     padding: 1%;
 }

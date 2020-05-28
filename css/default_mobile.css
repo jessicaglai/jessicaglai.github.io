@@ -2,6 +2,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.wrapper__allContent {
+    background-color: ivory;
+    width: 100%;
+}
+
 p {
     text-align: center;
     font-size: 4rem;
@@ -30,12 +35,11 @@ hr.style-two {
 /* Text Header Classes */
 
 .font__siteTitle {
-    font-size: 8vw;
-    line-height: 1rem;
+    font-size: 10vw;
 }
 
 .font__logline {
-    font-size: 6rem;
+    font-size: 8vw;
 }
 
 .font__sectionHeader {
@@ -101,10 +105,6 @@ Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
 
 .projectImage {
     width: 100%;
-}
-
-.container__contentFrame {
-    background-color: ivory;
 }
 
 .container__logo {
