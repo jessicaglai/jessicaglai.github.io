@@ -7,6 +7,11 @@ body {
     width: 100%;
 }
 
+header a {
+    color: black;
+    text-decoration: none;
+}
+
 p {
     text-align: center;
     font-size: 4rem;
@@ -112,7 +117,7 @@ Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
 .container__logo {
     width: 50%;
     margin: 0 auto;
-    padding: 5%;
+    padding: 5% 5%;
 }
 
 .container__icon {

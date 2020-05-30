@@ -4,12 +4,18 @@ body {
 
 .wrapper__allContent {
     margin: 0 auto;
+    padding: 0 2vw;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    font-size: small;
+    padding: 2vh;
 }
 
 /* Wrapper adjustment based on size of browser window: the smaller the browser is, the wider the content wrapper becomes */
@@ -20,7 +26,7 @@ header {
     }
 }
 
-@media all and (max-width: 1000px) and (min-width: 520px) {
+@media all and (max-width: 1000px) and (min-width: 700px) {
     .wrapper__allContent {
         width: 90%;
     }
@@ -28,7 +34,8 @@ header {
 
 p {
     font-size: 1rem;
-    padding: 0;
+    margin: 4%;
+    padding: 0 0;
 }
 
 /* Text Header Classes */
@@ -40,7 +47,6 @@ p {
 .font__logline {
     font-size: 1.5rem;
     line-height: 1rem;
-    margin: 1vh;
 }
 
 .font__sectionHeader {
@@ -49,48 +55,57 @@ p {
 
 .font__projectTitle {
     font-size: 1.5rem;
-    padding-top: 1.5rem;
-    margin: 0;
+    margin: 1vh 0;
+    padding: 1vh 0 0 3vw;
 }
 
 .font__projectSubtitle {
     font-size: 1rem;
     font-weight: 300;
-    margin: 0;
-    padding-top: .8rem;
-    padding-bottom: 1rem;
+    margin: 1vh 0 2vh 0;
+    padding: 0 0 0 3vw;
 }
 
 /* Text Headers END */
 
 .item__project {
     background-color: whitesmoke;
-    margin-bottom: 10vh;
+    margin: 0 0 5vw 0;
+    padding: .01vw 0;
+}
+
+.item__project p {
+    text-align: left;
 }
 
 .container__body--notHeader {
     display: flex;
-    padding-left: 2%;
-    padding-right: 2%;
+    justify-content: space-between;
 }
 
 .container__scrollingContent {
-    width: 70%;
-    padding-left: 5%;
-    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 68%;
 }
 
 .container__sidebar {
     width: 30%;
-    margin-top: 5vh;
+    margin-top: 3%;
+}
+
+.container__sidebar p {
+    padding: 5%;
+    margin: 0 auto;
 }
 
 .container__logo {
     width: 15%;
-    padding: 1%;
-    margin: 0;
+    padding: 1% 1%;
+    margin: 0 0;
 }
 
 .container__siteTitleLogline {
-    padding: 1%;
+    display: inline-block;
+    white-space: nowrap;
 }
