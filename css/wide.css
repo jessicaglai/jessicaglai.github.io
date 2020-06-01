@@ -34,8 +34,6 @@ footer {
 
 p {
     font-size: 1rem;
-    margin: 4%;
-    padding: 0 0;
 }
 
 /* Text Header Classes */
@@ -51,28 +49,18 @@ p {
 
 .font__sectionHeader {
     font-size: 2rem;
+    padding: 0;
 }
 
 .font__projectTitle {
     font-size: 1.5rem;
-    margin: 1vh 0;
-    padding: 1vh 0 0 3vw;
 }
 
 .font__projectSubtitle {
     font-size: 1rem;
-    font-weight: 300;
-    margin: 1vh 0 2vh 0;
-    padding: 0 0 0 3vw;
 }
 
 /* Text Headers END */
-
-.item__project {
-    background-color: whitesmoke;
-    margin: 0 0 5vw 0;
-    padding: .01vw 0;
-}
 
 .item__project p {
     text-align: left;
@@ -89,19 +77,21 @@ p {
     width: 68%;
 }
 
-.container__sidebar {
+.container__sidebarColumn {
     width: 30%;
+}
+
+.wrapper__sidebar {
     height: 30vh;
-    margin-top: 3vh;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     position: sticky;
-    top: 15vh;
+    top: 10%;
 }
 
-.container__sidebar p {
+.wrapper__sidebar p {
     padding: 5%;
     margin: 0 auto;
 }

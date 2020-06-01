@@ -1,21 +1,23 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #1D1E18;
 }
 
 .wrapper__allContent {
-    background-color: ivory;
+    background-color: #F1F2EB;
     width: 100%;
 }
 
 header a {
-    color: black;
+    color: #1D1E18;
     text-decoration: none;
 }
 
 p {
     text-align: center;
     font-size: 4rem;
-    padding: 5%;
+    padding: 0;
+    margin: 4%;
 }
 
 img {
@@ -34,7 +36,7 @@ Taken from https://css-tricks.com/examples/hrs/ */
 hr.style-two {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #453641, rgba(0, 0, 0, 0));
 }
 
 /* Text Header Classes */
@@ -46,25 +48,29 @@ hr.style-two {
 
 .font__logline {
     font-size: 8vw;
-    margin: 3vh;
+    margin: 5% auto;
 }
 
 .font__sectionHeader {
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
+    margin: 4%;
+    padding: 3vh;
 }
 
 .font__projectTitle {
     font-size: 5rem;
     font-weight: bold;
-    padding-left: 5%;
+    margin: 1vh 0;
+    padding: 1vh 0 0 3vw;
 }
 
 .font__projectSubtitle {
-    font-size: 5rem;
-    font-weight: normal;
-    padding-left: 5%;
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 1vh 0 2vh 0;
+    padding: 0 0 0 3vw;
 }
 
 /* Text Headers END */
@@ -88,6 +94,13 @@ header {
 
 .container_projects {
     display: flex;
+}
+
+.item__project {
+    background-color: #D8DAD3;
+    color: #453641;
+    margin: 0 0 10vh 0;
+    padding: .01vw 0;
 }
 
 /* Fits video players to screen width
@@ -114,10 +127,18 @@ Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
     width: 100%;
 }
 
+.wrapper__sidebar {
+    margin: 3vh 0;
+}
+
+.wrapper__sidebar p {
+    margin: 3vh;
+}
+
 .container__logo {
     width: 50%;
     margin: 0 auto;
-    padding: 5% 5%;
+    padding: 5%;
 }
 
 .container__icon {
