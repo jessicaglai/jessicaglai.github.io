@@ -91,7 +91,14 @@ p {
 
 .container__sidebar {
     width: 30%;
-    margin-top: 3%;
+    height: 30vh;
+    margin-top: 3vh;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 15vh;
 }
 
 .container__sidebar p {
