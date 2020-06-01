@@ -13,6 +13,11 @@ header a {
     text-decoration: none;
 }
 
+a {
+    color: #453641;
+    font-weight: bold;
+}
+
 p {
     text-align: center;
     font-size: 4rem;
