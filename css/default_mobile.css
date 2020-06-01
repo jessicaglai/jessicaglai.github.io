@@ -16,6 +16,7 @@ header a {
 p {
     text-align: center;
     font-size: 4rem;
+    line-height: 6rem;
     padding: 0;
     margin: 4%;
 }
@@ -62,14 +63,14 @@ hr.style-two {
 .font__projectTitle {
     font-size: 5rem;
     font-weight: bold;
-    margin: 1vh 0;
-    padding: 1vh 0 0 3vw;
+    margin: 4% 0 1vh 0;
+    padding: 0 0 0 3vw;
 }
 
 .font__projectSubtitle {
     font-size: 4.5rem;
     font-weight: 300;
-    margin: 1vh 0 2vh 0;
+    margin: 1vh 0 4% 0;
     padding: 0 0 0 3vw;
 }
 
