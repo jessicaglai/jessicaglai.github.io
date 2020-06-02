@@ -1,21 +1,21 @@
+/* Default/Mobile Stylesheet */
+
+/* GENERAL STYLING */
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #1D1E18;
+    background-color: darkseagreen;
 }
 
 .fullPageWrapper {
     background-color: #F1F2EB;
     width: 100%;
-}
-
-header a {
+    font-family: 'Open Sans', sans-serif;
     color: #1D1E18;
-    text-decoration: none;
 }
 
-a {
-    color: #453641;
-    font-weight: bold;
+footer {
+    font-size: 3rem;
+    text-align: center;
 }
 
 p {
@@ -31,13 +31,16 @@ img {
     height: auto;
 }
 
-footer {
-    font-size: 3rem;
-    text-align: center;
+a {
+    color: #453641;
+    font-weight: bold;
 }
 
-/* Gradient transparent - color - transparent
-Taken from https://css-tricks.com/examples/hrs/ */
+/* END GEN STYLING*/
+
+/* REUSABLE MODIFIERS */
+
+/* hr style taken from https://css-tricks.com/examples/hrs/ */
 
 .hr--fade {
     border: 0;
@@ -45,11 +48,31 @@ Taken from https://css-tricks.com/examples/hrs/ */
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #453641, rgba(0, 0, 0, 0));
 }
 
+/* end hr style */
+
 .text--center {
     text-align: center;
 }
 
-/* Text Header Classes */
+.img--circle {
+    border-radius: 50%;
+}
+
+/* END REUSABLE MODIFIERS*/
+
+/* HEADER */
+
+.header__logo {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.header__textWrapper a {
+    color: #1D1E18;
+    text-decoration: none;
+    text-align: center;
+}
 
 .header__siteTitle {
     font-size: 10vw;
@@ -61,12 +84,67 @@ Taken from https://css-tricks.com/examples/hrs/ */
     margin: 5% auto;
 }
 
-.main__sectionHeader {
+/* END HEADER */
+
+/* PAGE ORGANIZATION */
+
+.body__sidebarColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.body__projectColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* END PAGE ORG*/
+
+/* SIDEBAR */
+
+.sidebar {
+    margin: 3vh 0;
+}
+
+.sidebar p {
+    margin: 3vh;
+}
+
+.sidebar__icon {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.sidebar__bio {
+    width: 100%;
+}
+
+.sidebar__socialWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sidebar__social_icon {
+    width: 10%;
+}
+
+/* END SIDEBAR */
+
+/* PROJECTS */
+
+.sectionHeader {
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
     margin: 4%;
     padding: 3vh;
+}
+
+.project {
+    background-color: #D8DAD3;
+    color: #453641;
+    margin: 0 0 10vh 0;
+    padding: .01vw 0;
 }
 
 .project__title {
@@ -83,47 +161,21 @@ Taken from https://css-tricks.com/examples/hrs/ */
     padding: 0 0 0 3vw;
 }
 
-/* Text Headers END */
-
-header {
-    text-align: center;
-}
-
-.sidebar__icon--circle {
-    border-radius: 50%;
-}
-
-.sidebar__social {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.social__icon {
-    width: 10%;
-}
-
-.body__mainColumn {
-    display: flex;
-}
-
-.project {
-    background-color: #D8DAD3;
-    color: #453641;
-    margin: 0 0 10vh 0;
-    padding: .01vw 0;
+.project__img {
+    width: 100%;
 }
 
 /* Fits video players to screen width
 Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
 
-.videoWrapper {
+.project__vid {
     position: relative;
     height: 0;
     /* falls back to 16/9, but otherwise uses ratio from HTML */
     padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
 }
 
-.videoWrapper iframe {
+.project__vid iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,31 +183,15 @@ Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
     height: 100%;
 }
 
-/* END */
+/* end video fitter */
 
-.project__img {
-    width: 100%;
-}
-
-.sidebar {
-    margin: 3vh 0;
-}
-
-.sidebar p {
-    margin: 3vh;
-}
-
-.header__logo {
-    width: 50%;
-    margin: 0 auto;
-    padding: 5%;
-}
-
-.sidebar__icon {
-    width: 75%;
+.project__link {
     margin: 0 auto;
 }
 
-.sidebar__bio {
+.project__link iframe {
+    height: auto;
     width: 100%;
 }
+
+/* END PROJECTS */

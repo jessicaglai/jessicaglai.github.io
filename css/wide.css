@@ -1,21 +1,10 @@
-body {
-    background-color: darkseagreen;
-}
+/* Wide/Desktop Stylesheet */
+
+/* GENERAL STYLING */
 
 .fullPageWrapper {
     margin: 0 auto;
     padding: 0 2vw;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    font-size: small;
-    padding: 2vh;
 }
 
 /* Wrapper adjustment based on size of browser window: the smaller the browser is, the wider the content wrapper becomes */
@@ -32,12 +21,38 @@ footer {
     }
 }
 
+/* end wrapper adjustment */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    font-size: small;
+    padding: 2vh;
+}
+
 p {
     font-size: 1rem;
     line-height: 1.75rem;
 }
 
-/* Text Header Classes */
+/* END GEN STYLING */
+
+/* HEADER */
+
+.header__logo {
+    width: 15%;
+    padding: 1% 1%;
+    margin: 0 0;
+}
+
+.header__textWrapper a {
+    display: inline-block;
+    white-space: nowrap;
+}
 
 .header__siteTitle {
     font-size: 2rem;
@@ -48,39 +63,26 @@ p {
     line-height: 1rem;
 }
 
-.main__sectionHeader {
-    font-size: 2rem;
-    padding: 0;
-}
+/* END HEADER */
 
-.project__title {
-    font-size: 1.5rem;
-}
-
-.project__subtitle {
-    font-size: 1rem;
-}
-
-/* Text Headers END */
-
-.project p {
-    text-align: left;
-}
+/* PAGE ORGANIZATION */
 
 .bodyFlexbox {
     display: flex;
     justify-content: space-between;
 }
 
-.body__mainColumn {
-    display: flex;
-    flex-direction: column;
-    width: 68%;
-}
-
 .body__sidebarColumn {
     width: 30%;
 }
+
+.body__projectColumn {
+    width: 68%;
+}
+
+/* END PAGE ORG */
+
+/* SIDEBAR */
 
 .sidebar {
     height: 30vh;
@@ -97,13 +99,25 @@ p {
     margin: 0 auto;
 }
 
-.header__logo {
-    width: 15%;
-    padding: 1% 1%;
-    margin: 0 0;
+/* END SIDEBAR */
+
+/* PROJECTS */
+
+.sectionHeader {
+    font-size: 2rem;
+    padding: 0;
 }
 
-.header__text {
-    display: inline-block;
-    white-space: nowrap;
+.project__title {
+    font-size: 1.5rem;
 }
+
+.project__subtitle {
+    font-size: 1rem;
+}
+
+.project p {
+    text-align: left;
+}
+
+/* END PROJECTS */
