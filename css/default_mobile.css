@@ -3,7 +3,7 @@ body {
     color: #1D1E18;
 }
 
-.wrapper__allContent {
+.fullPageWrapper {
     background-color: #F1F2EB;
     width: 100%;
 }
@@ -39,25 +39,29 @@ footer {
 /* Gradient transparent - color - transparent
 Taken from https://css-tricks.com/examples/hrs/ */
 
-hr.style-two {
+.hr--fade {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #453641, rgba(0, 0, 0, 0));
 }
 
+.text--center {
+    text-align: center;
+}
+
 /* Text Header Classes */
 
-.font__siteTitle {
+.header__siteTitle {
     font-size: 10vw;
     margin: 0;
 }
 
-.font__logline {
+.header__logline {
     font-size: 8vw;
     margin: 5% auto;
 }
 
-.font__sectionHeader {
+.main__sectionHeader {
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
@@ -65,14 +69,14 @@ hr.style-two {
     padding: 3vh;
 }
 
-.font__projectTitle {
+.project__title {
     font-size: 5rem;
     font-weight: bold;
     margin: 4% 0 1vh 0;
     padding: 0 0 0 3vw;
 }
 
-.font__projectSubtitle {
+.project__subtitle {
     font-size: 4.5rem;
     font-weight: 300;
     margin: 1vh 0 4% 0;
@@ -85,24 +89,24 @@ header {
     text-align: center;
 }
 
-.circularImage {
+.sidebar__icon--circle {
     border-radius: 50%;
 }
 
-.container__social {
+.sidebar__social {
     display: flex;
     justify-content: space-evenly;
 }
 
-.item__social {
+.social__icon {
     width: 10%;
 }
 
-.container_projects {
+.body__mainColumn {
     display: flex;
 }
 
-.item__project {
+.project {
     background-color: #D8DAD3;
     color: #453641;
     margin: 0 0 10vh 0;
@@ -129,29 +133,29 @@ Taken from CSS Tricks https://css-tricks.com/fluid-width-video/ */
 
 /* END */
 
-.projectImage {
+.project__img {
     width: 100%;
 }
 
-.wrapper__sidebar {
+.sidebar {
     margin: 3vh 0;
 }
 
-.wrapper__sidebar p {
+.sidebar p {
     margin: 3vh;
 }
 
-.container__logo {
+.header__logo {
     width: 50%;
     margin: 0 auto;
     padding: 5%;
 }
 
-.container__icon {
+.sidebar__icon {
     width: 75%;
     margin: 0 auto;
 }
 
-.container__bio {
+.sidebar__bio {
     width: 100%;
 }
